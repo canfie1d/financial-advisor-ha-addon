@@ -1,5 +1,5 @@
 name: Financial Advisor
-version: "1.0.7"
+version: "1.0.8"
 slug: financial_advisor
 description: Monarch, Venmo and household settlement MCP servers, plus Kait's page and the budget planner
 url: https://github.com/canfie1d/financial-advisor-ha-addon
@@ -12,7 +12,7 @@ boot: auto
 ingress: false
 panel_icon: mdi:cash-multiple
 ports:
-  8101/tcp: 8101
+  8101/tcp: 8106
 ports_description:
   8101/tcp: All three servers, routed by hostname, for a reverse proxy on the host
 map:
