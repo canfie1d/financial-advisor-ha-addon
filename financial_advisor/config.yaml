@@ -1,5 +1,5 @@
 name: Financial Advisor
-version: "1.0.8"
+version: "1.0.9"
 slug: financial_advisor
 description: Monarch, Venmo and household settlement MCP servers, plus Kait's page and the budget planner
 url: https://github.com/canfie1d/financial-advisor-ha-addon
@@ -9,8 +9,11 @@ arch:
 init: false
 startup: application
 boot: auto
-ingress: false
+ingress: true
+ingress_port: 8099
 panel_icon: mdi:cash-multiple
+panel_title: Financial Advisor
+panel_admin: true
 ports:
   8101/tcp: 8106
 ports_description:
