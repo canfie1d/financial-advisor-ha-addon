@@ -1,0 +1,62 @@
+name: Financial Advisor
+version: "1.0.7"
+slug: financial_advisor
+description: Monarch, Venmo and household settlement MCP servers, plus Kait's page and the budget planner
+url: https://github.com/canfie1d/financial-advisor-ha-addon
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: application
+boot: auto
+ingress: false
+panel_icon: mdi:cash-multiple
+ports:
+  8101/tcp: 8101
+ports_description:
+  8101/tcp: All three servers, routed by hostname, for a reverse proxy on the host
+map:
+  - data:rw
+image: ghcr.io/canfie1d/{arch}-addon-financial-advisor
+options:
+  oauth_passphrase: ""
+  monarch_public_url: https://monarch.ryanandkaitlin.com
+  monarch_oauth_signing_secret: ""
+  monarch_oauth_passphrase: ""
+  monarch_session_id: ""
+  monarch_csrf_token: ""
+  monarch_token: ""
+  monarch_device_uuid: ""
+  monarch_email: ""
+  monarch_password: ""
+  monarch_mfa_secret: ""
+  venmo_public_url: https://venmo.ryanandkaitlin.com
+  venmo_oauth_signing_secret: ""
+  venmo_oauth_passphrase: ""
+  venmo_device_id: ""
+  fa_public_url: https://financial-advisor.ryanandkaitlin.com
+  fa_oauth_signing_secret: ""
+  fa_oauth_passphrase: ""
+  fa_access_code: ""
+  fa_kait_phone: ""
+schema:
+  oauth_passphrase: password
+  monarch_public_url: str
+  monarch_oauth_signing_secret: password
+  monarch_oauth_passphrase: password?
+  monarch_session_id: password?
+  monarch_csrf_token: password?
+  monarch_token: password?
+  monarch_device_uuid: str?
+  monarch_email: str?
+  monarch_password: password?
+  monarch_mfa_secret: password?
+  venmo_public_url: str
+  venmo_oauth_signing_secret: password
+  venmo_oauth_passphrase: password?
+  venmo_device_id: str?
+  fa_public_url: str
+  fa_oauth_signing_secret: password
+  fa_oauth_passphrase: password?
+  fa_access_code: password?
+  fa_kait_phone: str?
