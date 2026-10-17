@@ -1,5 +1,5 @@
 name: Financial Advisor
-version: "1.0.10"
+version: "1.0.11"
 slug: financial_advisor
 description: Monarch, Venmo and household settlement MCP servers, plus Kait's page and the budget planner
 url: https://github.com/canfie1d/financial-advisor-ha-addon
@@ -36,6 +36,8 @@ options:
   venmo_public_url: https://venmo.ryanandkaitlin.com
   venmo_oauth_signing_secret: ""
   venmo_oauth_passphrase: ""
+  venmo_username: ""
+  venmo_password: ""
   venmo_device_id: ""
   fa_public_url: https://financial-advisor.ryanandkaitlin.com
   fa_oauth_signing_secret: ""
@@ -57,6 +59,8 @@ schema:
   venmo_public_url: str
   venmo_oauth_signing_secret: password
   venmo_oauth_passphrase: password?
+  venmo_username: str?
+  venmo_password: password?
   venmo_device_id: str?
   fa_public_url: str
   fa_oauth_signing_secret: password
