@@ -1,7 +1,7 @@
 name: Financial Advisor
-version: "1.0.19"
+version: "1.0.20"
 slug: financial_advisor
-description: Monarch, Venmo and household settlement MCP servers, plus Kait's page and the budget planner
+description: Monarch, Venmo and household settlement MCP servers, plus the Financial Advisor web app
 url: https://github.com/canfie1d/financial-advisor-ha-addon
 arch:
   - aarch64
@@ -44,6 +44,8 @@ options:
   fa_oauth_passphrase: ""
   fa_access_code: ""
   fa_kait_phone: ""
+  anthropic_api_key: ""
+  mort_model: ""
 schema:
   oauth_passphrase: password
   monarch_public_url: str
@@ -67,3 +69,5 @@ schema:
   fa_oauth_passphrase: password?
   fa_access_code: password?
   fa_kait_phone: str?
+  anthropic_api_key: password?
+  mort_model: str?
