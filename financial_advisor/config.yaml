@@ -1,5 +1,5 @@
 name: Financial Advisor
-version: "1.0.20"
+version: "1.0.21"
 slug: financial_advisor
 description: Monarch, Venmo and household settlement MCP servers, plus the Financial Advisor web app
 url: https://github.com/canfie1d/financial-advisor-ha-addon
@@ -42,6 +42,7 @@ options:
   fa_public_url: https://financial-advisor.ryanandkaitlin.com
   fa_oauth_signing_secret: ""
   fa_oauth_passphrase: ""
+  fa_ryan_pin: ""
   fa_access_code: ""
   fa_kait_phone: ""
   anthropic_api_key: ""
@@ -67,6 +68,7 @@ schema:
   fa_public_url: str
   fa_oauth_signing_secret: password
   fa_oauth_passphrase: password?
+  fa_ryan_pin: password?
   fa_access_code: password?
   fa_kait_phone: str?
   anthropic_api_key: password?
