@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.27
+
+- Silence "use client" bundling warnings in the server build
+- Report real health in the admin panel, drop the old add-on options
+
 ## 1.0.26
 
 - Create the data directory before saving settings
