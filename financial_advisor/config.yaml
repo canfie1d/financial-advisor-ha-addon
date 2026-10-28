@@ -1,5 +1,5 @@
 name: Financial Advisor
-version: "1.0.24"
+version: "1.0.25"
 slug: financial_advisor
 description: Monarch, Venmo and household settlement MCP servers, plus the Financial Advisor web app
 url: https://github.com/canfie1d/financial-advisor-ha-addon

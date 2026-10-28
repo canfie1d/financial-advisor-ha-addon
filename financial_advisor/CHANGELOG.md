@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.25
+
+- Settle: live month-to-date figures from Monarch, month-end close, username sign-in (#4)
+
 ## 1.0.24
 
 - Move server settings from the add-on Configuration to each server's page
