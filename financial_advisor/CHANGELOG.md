@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.26
+
+- Create the data directory before saving settings
+
 ## 1.0.25
 
 - Settle: live month-to-date figures from Monarch, month-end close, username sign-in (#4)
