@@ -1,5 +1,5 @@
 name: Financial Advisor
-version: "1.0.23"
+version: "1.0.24"
 slug: financial_advisor
 description: Monarch, Venmo and household settlement MCP servers, plus the Financial Advisor web app
 url: https://github.com/canfie1d/financial-advisor-ha-addon
@@ -21,36 +21,18 @@ ports_description:
 map:
   - data:rw
 image: ghcr.io/canfie1d/{arch}-addon-financial-advisor
+# Deprecated: settings are now set on each server's page in the panel and stored in /data. These
+# options are imported once on the first start of a version with per-server settings, then ignored.
+# Kept in the schema (all optional) so the Supervisor does not drop them before the import runs;
+# remove them in a later release. The URL defaults stay so installs that never changed them import them.
 options:
-  oauth_passphrase: ""
   monarch_public_url: https://monarch.ryanandkaitlin.com
-  monarch_oauth_signing_secret: ""
-  monarch_oauth_passphrase: ""
-  monarch_session_id: ""
-  monarch_csrf_token: ""
-  monarch_token: ""
-  monarch_device_uuid: ""
-  monarch_email: ""
-  monarch_password: ""
-  monarch_mfa_secret: ""
   venmo_public_url: https://venmo.ryanandkaitlin.com
-  venmo_oauth_signing_secret: ""
-  venmo_oauth_passphrase: ""
-  venmo_username: ""
-  venmo_password: ""
-  venmo_device_id: ""
   fa_public_url: https://financial-advisor.ryanandkaitlin.com
-  fa_oauth_signing_secret: ""
-  fa_oauth_passphrase: ""
-  fa_ryan_pin: ""
-  fa_access_code: ""
-  fa_kait_phone: ""
-  anthropic_api_key: ""
-  mort_model: ""
 schema:
-  oauth_passphrase: password
-  monarch_public_url: str
-  monarch_oauth_signing_secret: password
+  oauth_passphrase: password?
+  monarch_public_url: str?
+  monarch_oauth_signing_secret: password?
   monarch_oauth_passphrase: password?
   monarch_session_id: password?
   monarch_csrf_token: password?
@@ -59,14 +41,14 @@ schema:
   monarch_email: str?
   monarch_password: password?
   monarch_mfa_secret: password?
-  venmo_public_url: str
-  venmo_oauth_signing_secret: password
+  venmo_public_url: str?
+  venmo_oauth_signing_secret: password?
   venmo_oauth_passphrase: password?
   venmo_username: str?
   venmo_password: password?
   venmo_device_id: str?
-  fa_public_url: str
-  fa_oauth_signing_secret: password
+  fa_public_url: str?
+  fa_oauth_signing_secret: password?
   fa_oauth_passphrase: password?
   fa_ryan_pin: password?
   fa_access_code: password?

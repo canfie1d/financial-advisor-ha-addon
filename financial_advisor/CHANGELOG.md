@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.24
+
+- Move server settings from the add-on Configuration to each server's page
+
 ## 1.0.23
 
 - Publish an add-on changelog with each release
