@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.29
+
+- Run the pay-link tests by file glob so Node 22 finds them
+
 ## 1.0.28
 
 - Venmo: back off failed re-logins, load .env in the login script
