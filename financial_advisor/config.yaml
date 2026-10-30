@@ -1,7 +1,7 @@
 name: Financial Advisor
-version: "1.0.27"
+version: "1.0.28"
 slug: financial_advisor
-description: Monarch, Venmo and household settlement MCP servers, plus the Financial Advisor web app
+description: Monarch and household settlement MCP servers, plus the Financial Advisor web app
 url: https://github.com/canfie1d/financial-advisor-ha-addon
 arch:
   - aarch64
@@ -17,7 +17,7 @@ panel_admin: true
 ports:
   8101/tcp: 8106
 ports_description:
-  8101/tcp: All three servers, routed by hostname, for a reverse proxy on the host
+  8101/tcp: All servers, routed by hostname, for a reverse proxy on the host
 map:
   - data:rw
 image: ghcr.io/canfie1d/{arch}-addon-financial-advisor

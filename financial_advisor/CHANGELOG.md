@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.28
+
+- Venmo: back off failed re-logins, load .env in the login script
+- Replace the Venmo server with settlement pay links
+
 ## 1.0.27
 
 - Silence "use client" bundling warnings in the server build
