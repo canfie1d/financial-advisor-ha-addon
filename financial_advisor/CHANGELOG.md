@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.30
+
+- Retire the Monarch MCP server in favor of the official connector
+
 ## 1.0.29
 
 - Run the pay-link tests by file glob so Node 22 finds them
