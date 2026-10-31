@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.31
+
+- Export settings and state for HA Server Host
+
 ## 1.0.30
 
 - Retire the Monarch MCP server in favor of the official connector
